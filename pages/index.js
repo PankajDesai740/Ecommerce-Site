@@ -17,11 +17,10 @@ console.log({categoriesNames});
     <div className="p-5">
       {categoriesNames.map(categoryName => (
         <div>
-             <h2 className="text-2xl"> {categoryName}</h2>
+             <h2 className="text-2xl capitalize font-italic"> {categoryName}</h2>
         </div>
       ))}
-      <h2 className="text-2xl">
-        Mobiles</h2>
+      
         <div className="py-4">
           <div className="w-64">
             <div className="bg-blue-100 p-5 rounded-xl">
