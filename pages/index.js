@@ -15,8 +15,13 @@ console.log({categoriesNames});
 
   return (
     <div className="p-5">
-      <div className="text-2xl">
-        <h2>Mobiles</h2>
+      {categoriesNames.map(categoryName => (
+        <div>
+             <h2 className="text-2xl"> {categoryName}</h2>
+        </div>
+      ))}
+      <h2 className="text-2xl">
+        Mobiles</h2>
         <div className="py-4">
           <div className="w-64">
             <div className="bg-blue-100 p-5 rounded-xl">
@@ -35,6 +40,6 @@ console.log({categoriesNames});
           </div>
         </div>
       </div>
-    </div>
+   
   )
 }
